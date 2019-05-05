@@ -1,0 +1,45 @@
+.post-container {
+  font-family: 'San Francisco', sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  .post {
+    background: #fff;
+    border-radius: 3px;
+    padding: 25px 15px;
+    margin: 15px 0;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+    .postHeader {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #dfe3ee;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      .avatarContainer {
+        border-radius: 50%;
+        display: flex;
+        overflow: hidden;
+        margin-right: 15px;
+        img {
+          max-width: 75px;
+          max-height: 75px;
+        }
+      }
+
+      .authorInfo {
+        flex-direction: column;
+        h2 {
+          font-weight: bold;
+          color: #8e8e8e;
+        }
+        p {
+          color: #e3e3e3;
+          margin-top: 10px;
+        }
+      }
+    }
+    &--content {
+      line-height: 22px;
+      color: #505050;
+    }
+  }
+}
